@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B980440A-EB36-4D25-95CA-05BD15A02DD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>COS210_Project_FoodOrderingSystem_</RootNamespace>
+    <AssemblyName>COS210_Project%28FoodOrderingSystem%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Yan Naing\Downloads\Documents\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\Yan Naing\Downloads\Compressed\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Nov.Barcode, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Chart, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Diagram, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Grid, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Host.WinForm, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Presentation, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Schedule, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.Text, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad" />
+    <Reference Include="Nevron.Nov.WinFormControls, Version=22.10.19.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adamin_dashboard_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adamin_dashboard_form.Designer.cs">
+      <DependentUpon>Adamin_dashboard_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgetpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgetpassword.Designer.cs">
+      <DependentUpon>Forgetpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemClass.cs" />
+    <Compile Include="MainMemu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMemu.Designer.cs">
+      <DependentUpon>MainMemu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagebox.Designer.cs">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myorders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myorders.Designer.cs">
+      <DependentUpon>Myorders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderList.Designer.cs">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resetpasswordform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetpasswordform.Designer.cs">
+      <DependentUpon>resetpasswordform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adamin_dashboard_form.resx">
+      <DependentUpon>Adamin_dashboard_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgetpassword.resx">
+      <DependentUpon>Forgetpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMemu.resx">
+      <DependentUpon>MainMemu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagebox.resx">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myorders.resx">
+      <DependentUpon>Myorders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderList.resx">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetpasswordform.resx">
+      <DependentUpon>resetpasswordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cup-of-coffee-on-black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginformbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hideicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toilet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add to card logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
